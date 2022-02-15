@@ -1,0 +1,25 @@
+.selection{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.install{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.install .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center;
+}
+
+.slick-slide img{
+    display: inline;
+    text-align: center;
+}
+
+body{
+    background-color: indigo;
+    justify-content: center;
+}
