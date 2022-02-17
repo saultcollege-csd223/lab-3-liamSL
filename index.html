@@ -61,19 +61,114 @@
 
     <div>
         <h1>How To Use Slick</h1>
-        <div class ="usage">
+        <div class ="basic">
             <div>
-                <h2>Dots, Infinite and speed</h2>
+                <h2>Creating a Slick Carousel</h2>
+                <img src="images/slick example.PNG">
+                <p>1. First you will need to create a div element and give it a class, then you will have to put and elements you want in the carousel inside that div</p>
+                <p>2. Create a "$(document).ready(function(){})" in your app.js</p>
+                <p>3. Within this function you will put $(".your-class-name").slick()</p>
+                <p>4. Within the slick() at the end of the previous step you will set the attributes of the slick carousel. (we will go over all the attributes on the next slides)</p>
+                <p>the image above is an example of what it should look like with some additional attributes</p>
             </div>
             <div>
-                <h2>SlidesToShow, SlidesToScroll</h2>
+                <h2>Attributes</h2>
+                <p>Slick comes with many different ways to customize the look and functionality of its carousels.</p>
+                <p>We will start by going over the ones you saw in the image on the last slide.</p>
             </div>
             <div>
-                <h2></h2>
+                <h2>Dots and infinite</h2>
+                <img src="images/dotsExample.PNG">
+                <img src="images/dotsInfinite.PNG">
+                <p>in your slick method you can set the "dots" attribute equal to true to have dots for each slide in the carousel appear at the bottom</p>
+                <p>Likewise you can set the "infinite" attribute equal to true to have the carousel loop back to the first slide when it gets to the end</p>
+            </div>
+            <div>
+                <h2>SlidesToShow, SlidesToScroll and Speed</h2>
+                <img src="images/speedSlideShowSlideScroll.PNG">
+                <p>The SlidesToShow attribute and SlidesToScroll attribute will ditermine how many slides are displayed at once and how many slides it will scroll when the button is clicked respectively</p>
+                <p>The Speed attribute will determine how quicky the scrolling of the slides occurs</p>
+            </div>
+            <div>
+                <h2>centerMode</h2>
+                <img src="images/centermode.PNG" width="600px">
+                <br>
+                <img src="images/autoplay.PNG">
+                <p>You can use centerMode the center your carousel and change its look</p>
+            </div>
+            <div>
+                <h2>Fade</h2>
+                <img src="images/fade.PNG">
+                <p>You can use the CSSease attribute to create a transition when you scroll through your slides</p>
+            </div>
+            <div>
+                <h2>Ready For The Next Level</h2>
+                <img src="images/nextlevel.jpg">
+                <p>With these attributes you can make an easy, good looking slick carousel. But now its time to look at some more specific examples of what you can do with Slick</p>
             </div>
         </div>
     </div>
+    <div>
+        <h1>Cool Things With Slick</h1>
+        <p class="CoolThingsDesc">The following are example of what you can do with Slick along with the javascript used to create them</p>
+        <div class="usage">
+            <div>
+                <h2>Auto Scroll</h2>
+                <div class = "autoplay">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/autoplay.PNG">
+            </div>
+            <div>
+                <h2>Fade</h2>
+                <div class="fade">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/fade.PNG">
+            </div>
+            <div>
+                <h2>Slider Syncronization</h2>
+                <div class="slider-for">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <div class="slider-nav">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/sync.PNG">
+            </div>
+            <div>
+                <h2>Add and Remove</h2>
+                <div class="add-remove">
 
+                </div>
+                <div class="buttons">
+                    <a href="javascript:void(0)" class="button js-add-slide">Add Slide</a>
+                    <a href="javascript:void(0)" class="button js-remove-slide">Remove Slide</a>
+                </div>
+                <img src="images/add-remove.PNG">
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
