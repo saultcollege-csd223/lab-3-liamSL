@@ -1,0 +1,140 @@
+.selection{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.install{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.basic{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.usage{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.autoplay{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.fade{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.add-remove{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.slider-for{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.slider-nav{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.install .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center;
+}
+
+.basic .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.usage .slick-slide{
+    background-color: aqua;
+    margin: 1em;
+    text-align: center; 
+}
+
+.autoplay .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.fade .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.add-remove .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.slider-for .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.slider-nav .slick-slide{
+    background-color: aliceblue;
+    margin: 1em;
+    text-align: center; 
+}
+
+.slick-slide img{
+    display: inline;
+    text-align: center;
+}
+
+.slick-slide{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.CoolThingsDesc{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+header{
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background-color: darkred;
+    justify-content: center;
+}
+
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+h2{
+    color: Brown;
+}
+
+.addSlide{
+    background-color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.removeSlide{
+    background-color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+}
