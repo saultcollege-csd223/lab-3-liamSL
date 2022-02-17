@@ -127,13 +127,13 @@ h2{
     color: Brown;
 }
 
-.js-add-slide{
+.addSlide{
     background-color: aliceblue;
     font-size: 25px;
     text-decoration: none;
 }
 
-.js-remove-slide{
+.removeSlide{
     background-color: aliceblue;
     font-size: 25px;
     text-decoration: none;
