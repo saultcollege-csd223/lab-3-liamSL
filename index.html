@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick</title>
+
+    <link rel="stylesheet" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script defer src="slick/slick/slick.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>Slick Tutorial Webpage</header>
+    <div class="selection">
+
+    <div>
+    <h1>Getting Started</h1>
+    <div class = "install">
+        <div>
+            <h2>Files To Download</h2>
+            <img src="images/download-button.PNG" width="600px">
+            <p>This <a href="https://kenwheeler.github.io/slick/">Link</a> Will take you to the page where you can click "get it now"
+                at the top and then click the "Download Now" button to download slick</p>
+        </div>
+        <div>
+            <h2>Relocate To Project Folder</h2>
+            <img src="images/moveSlickTofolder.PNG">
+            <p>Next you will need to extract the zip folder and put it into your project folder (I renamed mine to just "slick" but yours will be called "slick-" followed by a version code)</p>
+        </div>
+        <div>
+            <h2>linking CSS</h2>
+            <img src="images/cssLinks.PNG">
+            <p>Now that you have the necessary files you will need to link them to your webpage. You can copy the following lines into link elements in your head element as seen in the above image</p>
+            <p> rel="stylesheet" href="slick-1.8.1/slick/slick.css"</p>
+            <p> rel="stylesheet" href="slick-1.8.1/slick/slick.min.css"</p>
+            <p>(The main.css in the above image is an additional css file where I added my own CSS)</p>
+        </div>
+        <div>
+            <h2>Linking JavaScript and JQuery</h2>
+            <img src="images/jsScripts.PNG" width="600px">
+            <p>You will also need to link the necessary jquery and js files to you webpage. you can copy the following lines into script elements in your head element as seen in the above image</p>
+            <p>defer src="https://code.jquery.com/jquery-1.11.0.min.js"</p>
+            <p>defer src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"</p>
+            <p>defer src="slick1.8.1/slick/slick.min.js"</p>
+            <p>defer src="app.js"</p>
+            <p>(The app.js is an additional js file where you will specify how you want your slick carousels to work. you will have to create this file your self using the tools of your IDE of choice)</p>
+        </div>
+        <div>
+            <h2>Good To Go</h2>
+            <img src="images/thumbsUp.jpg" width="600px">
+            <p>Congratulations!</p>
+            <p>Your set up is now complete and we can move on to learning how to use slick</p>
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h1>How To Use Slick</h1>
+        <div class ="basic">
+            <div>
+                <h2>Creating a Slick Carousel</h2>
+                <img src="images/slick example.PNG">
+                <p>1. First you will need to create a div element and give it a class, then you will have to put and elements you want in the carousel inside that div</p>
+                <p>2. Create a "$(document).ready(function(){})" in your app.js</p>
+                <p>3. Within this function you will put $(".your-class-name").slick()</p>
+                <p>4. Within the slick() at the end of the previous step you will set the attributes of the slick carousel. (we will go over all the attributes on the next slides)</p>
+                <p>the image above is an example of what it should look like with some additional attributes</p>
+            </div>
+            <div>
+                <h2>Attributes</h2>
+                <p>Slick comes with many different ways to customize the look and functionality of its carousels.</p>
+                <p>We will start by going over the ones you saw in the image on the last slide.</p>
+            </div>
+            <div>
+                <h2>Dots and infinite</h2>
+                <img src="images/dotsExample.PNG">
+                <img src="images/dotsInfinite.PNG">
+                <p>in your slick method you can set the "dots" attribute equal to true to have dots for each slide in the carousel appear at the bottom</p>
+                <p>Likewise you can set the "infinite" attribute equal to true to have the carousel loop back to the first slide when it gets to the end</p>
+            </div>
+            <div>
+                <h2>SlidesToShow, SlidesToScroll and Speed</h2>
+                <img src="images/speedSlideShowSlideScroll.PNG">
+                <p>The SlidesToShow attribute and SlidesToScroll attribute will ditermine how many slides are displayed at once and how many slides it will scroll when the button is clicked respectively</p>
+                <p>The Speed attribute will determine how quicky the scrolling of the slides occurs</p>
+            </div>
+            <div>
+                <h2>centerMode</h2>
+                <img src="images/centermode.PNG" width="600px">
+                <br>
+                <img src="images/autoplay.PNG">
+                <p>You can use centerMode the center your carousel and change its look</p>
+            </div>
+            <div>
+                <h2>Fade</h2>
+                <img src="images/fade.PNG">
+                <p>You can use the CSSease attribute to create a transition when you scroll through your slides</p>
+            </div>
+            <div>
+                <h2>Ready For The Next Level</h2>
+                <img src="images/nextlevel.jpg">
+                <p>With these attributes you can make an easy, good looking slick carousel. But now its time to look at some more specific examples of what you can do with Slick</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Cool Things With Slick</h1>
+        <p class="CoolThingsDesc">The following are example of what you can do with Slick along with the javascript used to create them</p>
+        <div class="usage">
+            <div>
+                <h2>Auto Scroll</h2>
+                <div class = "autoplay">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/autoplay.PNG">
+            </div>
+            <div>
+                <h2>Fade</h2>
+                <div class="fade">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/fade.PNG">
+            </div>
+            <div>
+                <h2>Slider Syncronization</h2>
+                <div class="slider-for">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <div class="slider-nav">
+                    <div><h3>A</h3></div>
+                    <div><h3>B</h3></div>
+                    <div><h3>C</h3></div>
+                    <div><h3>D</h3></div>
+                    <div><h3>E</h3></div>
+                    <div><h3>F</h3></div>
+                </div>
+                <img src="images/sync.PNG">
+            </div>
+            <div>
+                <h2>Add and Remove</h2>
+                <div class="add-remove">
+
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="addSlide">Add Slide</a>
+                    <a href="javascript:void(0)" class="removeSlide">Remove Slide</a>
+                </div>
+                <img src="images/add-remove.PNG">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
